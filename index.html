@@ -6,6 +6,7 @@
     <meta name="description" content="Aplicativo para cojunto residencial">
     <meta name="title" content="Conjunto Residencial">
     <title>Conjunto Residencial</title>
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     
 </head>
@@ -13,11 +14,11 @@
     <main class="container-fluid">
         <header>
             <section class="row">
-                <article class="col-2"><img class="img-fluid" src="imagenes/logo.png" alt="Logo Conjunto Residencial" srcset=""></article>
+                <article class="col-2">
+                    <img class="img-fluid" src="imagenes/logo.png" alt="Logo Conjunto Residencial" srcset="">
+                </article>
                 <article class="col-7">
-
-
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
@@ -32,15 +33,155 @@
                             <li class="nav-item">
                               <a class="nav-link" href="#">Contactanos</a>
                             </li>
-                            
-                          </ul>
+                            </ul>
                         </div>
                       </nav>
-
-
+                    </article>
+                <article class="col-3">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
                 </article>
-                <article class="col-3">col</article>
           </section>
+          <section class="col-sm-12 bann1" >
+            <img src="./imagenes/banner_img_1.jpg" />
+          </section>
+      
+          <div class="container">
+            <h2>Modal Example</h2>
+            <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+</button>
+            <table class="table table-striped" border="solid">
+              <thead>
+                  <tr>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Edad</th>
+                      <th scope="col">Genero</th>
+                      <th scope="col">Total a pagar</th>
+                      <th scope="col">Fecha Mensual</th>
+                      <th scope="col">Acciones</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th scope="row">Dago Jimenez</th>
+                      <td>40</td>
+                      <td>Masculino</td>
+                      <td>200000</td>
+                      <td>2018-02</td>
+                      <td>
+                          <button type="button" class="btn btn-link">Ver mas</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Carolina Betancur</th>
+                      <td>48</td>
+                      <td>Femenino</td>
+                      <td>1500000</td>
+                      <td>2019-10</td>
+                      <td>
+                          <button type="button" class="btn btn-link">Ver mas</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Armando Pinto</th>
+                      <td>41</td>
+                      <td>Masculino</td>
+                      <td>700000</td>
+                      <td>2020-01</td>
+                      <td>
+                          <button type="button" class="btn btn-link">Ver mas</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Valeria Benedeti</th>
+                      <td>25</td>
+                      <td>Femenino</td>
+                      <td>900000</td>
+                      <td>2020-01</td>
+                      <td>
+                          <button type="button" class="btn btn-link">Ver mas</button>
+                      </td>
+                  </tr>
+                </tbody>
+          </table>
+          </div>
+         </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                  </div>
+                  <div class="modal-body">
+                   
+                    <table class="table table-striped" border="solid">
+                      <thead>
+                          <tr>
+                              <th scope="col">Nombre</th>
+                              <th scope="col">Edad</th>
+                              <th scope="col">Genero</th>
+                              <th scope="col">Total a pagar</th>
+                              <th scope="col">Fecha Mensual</th>
+                              <th scope="col">Acciones</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th scope="row">Dago Jimenez</th>
+                              <td>40</td>
+                              <td>Masculino</td>
+                              <td>200000</td>
+                              <td>2018-02</td>
+                              <td>
+                                  <button type="button" class="btn btn-link">Ver mas</button>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Carolina Betancur</th>
+                              <td>48</td>
+                              <td>Femenino</td>
+                              <td>1500000</td>
+                              <td>2019-10</td>
+                              <td>
+                                  <button type="button" class="btn btn-link">Ver mas</button>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Armando Pinto</th>
+                              <td>41</td>
+                              <td>Masculino</td>
+                              <td>700000</td>
+                              <td>2020-01</td>
+                              <td>
+                                  <button type="button" class="btn btn-link">Ver mas</button>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Valeria Benedeti</th>
+                              <td>25</td>
+                              <td>Femenino</td>
+                              <td>900000</td>
+                              <td>2020-01</td>
+                              <td>
+                                  <button type="button" class="btn btn-link">Ver mas</button>
+                              </td>
+                          </tr>
+          
+                      </tbody>
+                  </table>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </section>
         </header>
     </main>
     

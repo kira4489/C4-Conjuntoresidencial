@@ -1,0 +1,23 @@
+.row{
+display: flex;
+flex-direction: row;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+
+.modal.fade .modal-dialog{
+    max-width: 800px;
+}
+
+.col-2 img{
+ height: 60px;
+ margin: 40px;
+}
+
+.bann1{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 500px;
+}
