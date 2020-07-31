@@ -1,215 +1,262 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Aplicativo para cojunto residencial">
-    <meta name="title" content="Conjunto Residencial">
-    <link rel="apple-touch-icon" sizes="180x180" href="imagenes/iconos/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/iconos/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/iconos/favicon-16x16.png">
-    <link rel="manifest" href="imagenes/iconos/site.webmanifest">
-    <title>Conjunto Residencial</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-    <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body>
-    <main class="container-fluid">
-        <header>
-            <section class="row">
-                <article class="col-1 text-center"><img class="img-fluid" id="logo" src="imagenes/logo.png" alt="Logo Conjunto Residencial" srcset=""></article>
-                <article class="col-7">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                          <ul class="navbar-nav">
-                            <li class="nav-item active">
-                              <a class="nav-link" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Mensualidad</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Contactanos</a>
-                            </li>
-                            
-                          </ul>
-                        </div>
-                      </nav>
-                </article>
-                <article class="col-4">
-                  <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar contenido" aria-label="Search">
-                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
-                  </form>
-                </article>
-            </section>
-            <section class="row" id="ctn_banner">
-                <article class="col-lg-12">
-                  <img class="img-fluid card-img" src="imagenes/banner_img_1.jpg"/>
-                  <div class="card-title">Mensualidad</div>
-                  <div class="card-title-1">Conjunto Residencial</div>
-                </article>
-            </section>
-        </header>
 
-        <section id="main">
-          <div class="card text-center">
-            <div class="card-header">
-              <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" href="#crear-mensualidad" id="crear-mensualidad-tab">Crear Mensualidad</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Aplicativo para cojunto residencial">
+  <meta name="title" content="Conjunto Residencial">
+  <link rel="apple-touch-icon" sizes="180x180" href="imagenes/iconos/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes/iconos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imagenes/iconos/favicon-16x16.png">
+  <link rel="manifest" href="imagenes/iconos/site.webmanifest">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Conjunto Residencial</title>
+</head>
+
+<body>
+  <main class="container-fluid">
+    <header>
+      <section class="row">
+        <article class="col-1 text-center"><img class="img-fluid" id="logo" src="imagenes/logo.png"
+            alt="Logo Conjunto Residencial" srcset=""></article>
+        <article class="col-7">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#ver-estadistica" id="ver-estadistica-tab">Ver estadistica</a>
+                  <a class="nav-link" href="#">Mensualidad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contactanos</a>
                 </li>
               </ul>
             </div>
-            <div class="card-body">
-                <div class="tab-content" id="mis-tabs">
-                  <div class="tab-pane fade show active" id="crear-mensualidad" role="tabpanel" aria-labelledby="ver-estadistica-tab">
-                      <div class="row">
-                        <div class="col-10">
-                          <form class="form">
-                            <input class="form-control" type="search" placeholder="Filtrar" aria-label="Search"> 
-                          </form>
-                        </div>
-                        <div class="col-2">
-                          <button class="btn btn-info" type="button" id="btn-filtrar"><i class="fas fa-search-plus"></i></button>
-                          <button class="btn btn-info" type="button" id="btn-adicionar"><i class="fas fa-plus"></i></button>
-                          <div class="modal fade" id="modal-adicionar" tabindex="-1" role="dialog">
-                            <div class="modal-dialog modal-lg">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title">Adicionar Mensualidad</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                <form id="frm-mensualidad">
-                                  <div class="card text-left bg-primary text-white">
-                                    <div class="card-header">
-                                      Datos del propietario
-                                    </div>
-                                    <div class="card-body">
-                                        <article class="row">
-                                          <article class="col-6">
-                                            <div class="form-group">
-                                              <label for="nombre-propietario">Nombre (*)</label>
-                                              <input type="text" class="form-control" id="nombre-propietario" placeholder="Nombre del propietario" required/>
-                                            </div>
-                                          </article>
-                                          <article class="col-6">
-                                            <div class="form-group">
-                                              <label for="doc-propietario">Documento (*)</label>
-                                              <input type="text" class="form-control" id="doc-propietario" placeholder="Documento del propietario" required/>
-                                            </div>
-                                          </article>
-                                        </article>
-                                        <article class="row">
-                                          <article class="col-6">
-                                            <div class="form-group">
-                                              <label for="genero-propietario">Genero (*)</label>
-                                              <select class="form-control" id="genero-propietario" required>
-                                                <option style="display: none;" selected value></option>
-                                                <option value="H">Hombre</option>
-                                                <option value="M">Mujer</option>
-                                              </select>
-                                            </div>
-                                          </article>
-                                          <article class="col-6">
-                                            <div class="form-group">
-                                              <label for="fecha-nac-propietario">Fecha de nacimeinto (*)</label>
-                                              <input type="date" class="form-control" id="fecha-nac-propietario" placeholder="Fecha de nacimiento del propietario" required/>
-                                            </div>
-                                          </article>
-                                        </article>
-                                    </div>
-                                  </div>
+          </nav>
+        </article>
+        <article class="col-4">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar contenido" aria-label="Search">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </article>
+      </section>
+      <section class="row" id="ctn_banner">
+        <article class="col-lg-12">
+          <img class="img-fluid card-img" src="imagenes/banner_img_1.jpg" />
+          <div class="card-title">Mensualidad</div>
+          <div class="card-title-1">Conjunto Residencial</div>
+        </article>
+      </section>
+    </header>
 
-                                  <div class="card mt-4 text-left bg-info text-white">
-                                    <div class="card-header">
-                                      Datos de inmueble en la mensualidad
+    <section id="main">
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#crear-mensualidad" id="crear-mensualidad-tab">Crear
+                Mensualidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#ver-estadistica" id="ver-estadistica-tab">Ver estadistica</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="tab-content" id="mis-tabs">
+            <div class="tab-pane fade show active" id="crear-mensualidad" role="tabpanel"
+              aria-labelledby="ver-estadistica-tab">
+              <div class="row">
+                <!-- Input Buscar -->
+                <div class="col-10">
+                  <form class="form">
+                    <input class="form-control" type="search" placeholder="Filtrar" aria-label="Search">
+                  </form>
+                </div>
+                <!-- Botones buscar y + -->
+                <div class="col-2">
+                  <button class="btn btn-info" type="button" id="btn-filtrar"><i
+                      class="fas fa-search-plus"></i></button>
+                  <button class="btn btn-info" type="button" id="btn-adicionar"><i class="fas fa-plus"></i></button>
+                  <div class="modal fade" id="modal-adicionar" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Adicionar Mensualidad</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form id="frm-mensualidad">
+                            <div class="card text-left bg-primary text-white">
+                              <div class="card-header">
+                                Datos del propietario
+                              </div>
+                              <div class="card-body">
+                                <article class="row">
+                                  <article class="col-6">
+                                    <div class="form-group">
+                                      <label for="nombre-propietario">Nombre (*)</label>
+                                      <input type="text" class="form-control" id="nombre-propietario"
+                                        placeholder="Nombre del propietario" required />
                                     </div>
-                                    <div class="card-body">
-                                      <article class="row">
-                                        <article class="col-6"></article>
-                                        <article class="col-6"></article>
-                                      </article>
-                                      <article class="row">
-                                        <article class="col-6"></article>
-                                        <article class="col-6"></article>
-                                      </article>
+                                  </article>
+                                  <article class="col-6">
+                                    <div class="form-group">
+                                      <label for="doc-propietario">Documento (*)</label>
+                                      <input type="text" class="form-control" id="doc-propietario"
+                                        placeholder="Documento del propietario" required />
                                     </div>
-                                  </div>
-                                </form>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
-                                  <button type="button" class="btn btn-primary" id="btn-guardar-inmueble">Guardar</button>
-                                </div>
+                                  </article>
+                                </article>
+                                <article class="row">
+                                  <article class="col-6">
+                                    <div class="form-group">
+                                      <label for="genero-propietario">Genero (*)</label>
+                                      <select class="form-control" id="genero-propietario" required>
+                                        <option style="display: none;" selected value></option>
+                                        <option value="H">Hombre</option>
+                                        <option value="M">Mujer</option>
+                                      </select>
+                                    </div>
+                                  </article>
+                                  <article class="col-6">
+                                    <div class="form-group">
+                                      <label for="fecha-nac-propietario">Fecha de nacimeinto (*)</label>
+                                      <input type="date" class="form-control" id="fecha-nac-propietario"
+                                        placeholder="Fecha de nacimiento del propietario" required />
+                                    </div>
+                                  </article>
+                                </article>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="table-responsive">
-                              <table class="table table-bordered" id="tbl-mensualidades">
-                                <thead>
-                                  <tr>
-                                    <th scope="col">Nombre</th>
-                                    <th scope="col">Edad</th>
-                                    <th scope="col">Genero</th>
-                                    <th scope="col">Total a pagar</th>
-                                    <th scope="col">Fecha de mensualidad</th>
-                                    <th scope="col">Acciones</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                              </table>
+                            <!-- Modal mensualidad -->
+                            <div class="card mt-4 text-left bg-info text-white">
+                              <div class="card-header">
+                                Datos de inmueble en la mensualidad
+                              </div>
+                              <div class="card-body">
+                                <article class="row">
+                                  <article class="col-6">
+                                    <div class="form-group">
+                                      <label for="metros-cuadrados">Metros Cuadrados (*)</label>
+                                      <input type="number" class="form-control" id="metros-cuadrados"
+                                        placeholder="Metros Cuadrados"  />
+                                    </div>
+                                  </article>
+                                  <article class="col-6">
+                                    <div class="form-group"> -->
+
+                                      <!-- ¿Cómo relaciono el for="tipo" con los input de los radio check y cómo  
+                                      se establece el required-->
+                                      
+                                      <label for="tipo">Tipo (*)</label>
+                                      <div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                            class="custom-control-input">
+                                          <label class="custom-control-label" for="customRadioInline1">Apartamento</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                            class="custom-control-input">
+                                          <label class="custom-control-label" for="customRadioInline2">Casa</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </article>
+                                </article>
+                                <article class="row">
+                                  <article class="col-6">
+                                    <div class="form-group">
+                                      <label for="numero-habitantes">Número de habitantes (*)</label>
+                                      <input type="number" class="form-control" id="numero-habitantes"
+                                        placeholder="Numero de habitantes"  />
+                                    </div>
+                                  </article>
+                                  <article class="col-6">
+                                    <div class="form-group">
+                                      <label for="fecha-mensualidad">Fecha de mensualidad (*)</label>
+                                      <input type="date" class="form-control" id="fecha-mensualidad"  />
+                                    </div>
+                                  </article>
+                                </article>
+                              </div>
                             </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                          <button type="button" class="btn btn-primary" id="btn-guardar-inmueble">Guardar</button>
                         </div>
                       </div>
-                  </div>
-                  <div class="tab-pane fade" id="ver-estadistica" role="tabpanel" aria-labelledby="ver-estadistica-tab">
-                    
+                    </div>
                   </div>
                 </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <table class="table table-bordered" id="tbl-mensualidades">
+                      <thead>
+                        <tr>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Edad</th>
+                          <th scope="col">Genero</th>
+                          <th scope="col">Total a pagar</th>
+                          <th scope="col">Fecha de mensualidad</th>
+                          <th scope="col">Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="ver-estadistica" role="tabpanel" aria-labelledby="ver-estadistica-tab">
+
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
-        <footer>
-          <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/_9SgawMKmdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-          <div class="row">
-              <div class="col-12 text-center p-2">
-                  <p>Copyright© 2020 | Medellin - Antioquio, Colombia | <a href="https://github.com/devoscarmesa"><i class="fab fa-github"></i></a> | <a href="#"><i class="fab fa-facebook"></i></a> | <a href="#"><i class="fab fa-twitter"></i></a></p>
-              </div>
-          </div>
-      </footer>
-    </main>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="./js/main.js"></script>
-  </body>
+    <footer>
+      <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/_9SgawMKmdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+      <div class="row">
+        <div class="col-12 text-center p-2">
+          <p>Copyright© 2020 | Medellin - Antioquio, Colombia | <a href="https://github.com/devoscarmesa"><i
+                class="fab fa-github"></i></a> | <a href="#"><i class="fab fa-facebook"></i></a> | <a href="#"><i
+                class="fab fa-twitter"></i></a></p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
